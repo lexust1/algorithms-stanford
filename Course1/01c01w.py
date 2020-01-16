@@ -29,8 +29,6 @@
 # (We do not require you to submit your code, so feel free to use any 
 #  programming language you want --- just type the final numeric answer 
 #  in the following space.)
-# 1234*5678
-# Out[1]: 7006652
 
 
 num1 = str(3141592653589793238462643383279502884197169399375105820974944592)
