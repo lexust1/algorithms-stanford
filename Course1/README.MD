@@ -1,4 +1,4 @@
-# Programming Assignment #1
+# Programming Assignment #1 (Week 1)
 # Karatsuba multiplication algorithm
 
 In this programming assignment you will implement one or more of the integer
