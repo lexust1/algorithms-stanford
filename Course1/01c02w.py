@@ -28,12 +28,6 @@
 
 # Array names are similar to pseudocode in the book.
 
-# Create array from txt-file
-fh = open('IntegerArray.txt', 'r')
-list_str = fh.readlines()
-fh.close()
-ar = [ int(line) for line in list_str]
-
 # Function merge_and_count_split_inv(C, D) merge arrays and count split 
 # inversions.
 # Input:C and D are sorted arrays
@@ -83,6 +77,12 @@ def sort_and_count_inv(A):
         D, inv_right = sort_and_count_inv(A[len_A//2:])
         B, inv_split = merge_and_count_split_inv(C, D)
         return B, inv_left + inv_right + inv_split
+
+# Create array from txt-file
+fh = open('IntegerArray.txt', 'r')
+list_str = fh.readlines()
+fh.close()
+ar = [ int(line) for line in list_str]
 
 ar_sort, inv = sort_and_count_inv(ar)
 
