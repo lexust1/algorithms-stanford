@@ -1,6 +1,6 @@
 # Programming Assignment #1 (Week 1)
 # Greedy algorithm (weight - length) and weight/length ratio
-# Prim's spanning tree algorithm
+# Prim's minimum spanning tree algorithm
 
 1. In this programming problem and the next you'll code up the greedy algorithms from lecture for minimizing the weighted sum of completion times..
 
