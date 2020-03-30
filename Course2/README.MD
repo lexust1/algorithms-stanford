@@ -30,3 +30,17 @@ Your task is to run Dijkstra's shortest-path algorithm on this graph, using 1 (t
 You should report the shortest-path distances to the following ten vertices, in order: 7,37,59,82,99,115,133,165,188,197. You should encode the distances as a comma-separated string of integers. So if you find that all ten of these vertices except 115 are at distance 1000 away from vertex 1 and 115 is 2000 distance away, then your answer should be 1000,1000,1000,1000,1000,2000,1000,1000,1000,1000. Remember the order of reporting DOES MATTER, and the string should be in the same order in which the above ten vertices are given. The string should not contain any spaces. Please type your answer in the space provided.
 
 IMPLEMENTATION NOTES: This graph is small enough that the straightforward O(mn)O(mn) time implementation of Dijkstra's algorithm should work fine. OPTIONAL: For those of you seeking an additional challenge, try implementing the heap-based version. Note this requires a heap that supports deletions, and you'll probably need to maintain some kind of mapping between vertices and their positions in the heap.
+
+# Programming Assignment #3 (Week 3)
+# Median Maintenance algorithm
+
+Download the following text file:
+
+Median.txt
+The goal of this problem is to implement the "Median Maintenance" algorithm (covered in the Week 3 lecture on heap applications). The text file contains a list of the integers from 1 to 10000 in unsorted order; you should treat this as a stream of numbers, arriving one by one. Letting x_i​	  denote the i-th number of the file, the k-th median m_k ​is defined as the median of the numbers x_1,...,x_k.
+
+(So, if k is odd, then m_k is ((k+1)/2)-th smallest number among x_1,...,x_k; if k is even, then m_k is the (k/2)-th smallest number among x_1,...,x_k.)
+
+In the box below you should type the sum of these 10000 medians, modulo 10000 (i.e., only the last 4 digits). That is, you should compute (m1+m2+m3+⋯+m10000)mod 10000.
+
+OPTIONAL EXERCISE: Compare the performance achieved by heap-based and search-tree-based implementations of the algorithm.
