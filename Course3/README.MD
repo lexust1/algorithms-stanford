@@ -156,3 +156,46 @@ This file describes the weights of the vertices in a path graph (with the weight
 For example, the third line of the file is "6395702," indicating that the weight of the second vertex of the graph is 6395702.
 
 Your task in this problem is to run the dynamic programming algorithm (and the reconstruction procedure) from lecture on this data set. The question is: of the vertices 1, 2, 3, 4, 17, 117, 517, and 997, which ones belong to the maximum-weight independent set? (By "vertex 1" we mean the first vertex of the graph---there is no vertex 0.) In the box below, enter a 8-bit string, where the ith bit should be 1 if the ith of these 8 vertices is in the maximum-weight independent set, and 0 otherwise. For example, if you think that the vertices 1, 4, 17, and 517 are in the maximum-weight independent set and the other four vertices are not, then you should enter the string 10011010 in the box below.
+
+# Programming Assignment #4 (Week 4)
+# Knapsack algorithm
+
+1. In this programming problem and the next you'll code up the knapsack algorithm from lecture.
+
+Let's start with a warm-up. Download the text file below.
+
+knapsack1.txt
+This file describes a knapsack instance, and it has the following format:
+
+[knapsack_size][number_of_items]
+[value_1] [weight_1]
+[value_2] [weight_2]
+...
+
+For example, the third line of the file is "50074 659", indicating that the second item has value 50074 and size 659, respectively.
+You can assume that all numbers are positive. You should assume that item weights and the knapsack capacity are integers.
+In the box below, type in the value of the optimal solution.
+ADVICE: If you're not getting the correct answer, try debugging your algorithm using some small test cases. And then post them to the discussion forum!
+
+2.
+This problem also asks you to solve a knapsack instance, but a much bigger one.
+
+Download the text file below.
+
+knapsack_big.txt
+This file describes a knapsack instance, and it has the following format:
+
+[knapsack_size][number_of_items]
+[value_1] [weight_1]
+[value_2] [weight_2]
+...
+
+For example, the third line of the file is "50074 834558", indicating that the second item has value 50074 and size 834558, respectively. As before,
+you should assume that item weights and the knapsack capacity are integers.
+
+This instance is so big that the straightforward iterative implemetation uses an infeasible amount of time and space. So you will have to be creative to compute an optimal solution. One idea is to go back to a recursive implementation, solving subproblems --- and, of course, caching results to avoid redundant work --- only on an "as needed" basis.
+Also, be sure to think about appropriate data structures for storing and looking up solutions to subproblems.
+
+In the box below, type in the value of the optimal solution.
+
+ADVICE: If you're not getting the correct answer, try debugging your algorithm using some small test cases. And then post them to the discussion forum!
